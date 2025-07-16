@@ -1,3 +1,13 @@
+:root {
+  --bg-web-bg-color: #010101;
+  --bg-web-main-color: #fffffe;
+  --bg-web-highlight: #7f5af0;
+  --bg-element-bg-color: #16161a;
+  --bg-element-button-color: #7f5af0;
+  --bg-element-text: #fffffe;
+  --bg-element-paragraph: #94a1b2;
+  --bg-element-headline: #fffffe;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +15,23 @@
 }
 
 body {
-  background-color: #fffffe;
+  background-color: var(--bg-web-bg-color);
+  color: var(--bg-element-text);
+  height: 200dvh;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: var(--bg-web-highlight);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: right;
+  box-shadow: 0px 1px 7px 1px var(--bg-element-paragraph);
+}
+main {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .nav-lists {
@@ -13,6 +39,8 @@ body {
 }
 
 .nav-lists-show {
+  background-color: var(--bg-web-bg-color);
+  color: var(--bg-element-text);
   position: fixed;
   inset: 0;
   display: flex;
@@ -23,18 +51,89 @@ body {
 
 .nav-item {
   list-style-type: none;
+  text-transform: uppercase;
+  padding: 2rem 375px;
+  width: 100%;
+  transition: all 0.3s ease-in;
+  text-align: center;
 }
+
+.nav-item:hover {
+  color: var(--bg-element-button-color);
+  background-color: var(--bg-web-main-color);
+}
+.nav-lists > .nav-item:first-child {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.nav-name {
+  display: none;
+}
+
 .closed-button {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: 0.3rem;
+  right: 0.5rem;
+  cursor: pointer;
 }
 
 .hamburger-button {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
+  cursor: pointer;
 }
 .hamburger-hide {
   display: none;
+}
+
+@media only screen and (min-width: 376px) {
+  .hamburger-button {
+    display: none;
+  }
+  .closed-button {
+    display: none;
+  }
+
+  .nav-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
+  }
+
+  .nav-lists-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-style: italic;
+    letter-spacing: 0.125rem;
+  }
+  .nav-name {
+    display: block;
+    text-transform: capitalize;
+    font-style: italic;
+    letter-spacing: 0.125rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0 auto;
+  }
+  .nav-lists {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
