@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffffe;
+}
+/* .nav-container {
+  position: sticky;
+  border: 1px solid red;
+  display: flex;
+  justify-content: end;
+  top: 0px;
+}
+.nav-lists-container {
+  display: none;
+}
+
+.nav-lists-container-show {
+  display: block;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  height: 100dvh;
+  width: 100dvh;
+  background-color: #16161a;
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.nav-item:first-child {
+  padding: 0;
+}
+
+.nav-item {
+  color: #7f5af0;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  margin-bottom: 0.025em;
+  transition: all 0.25s ease-in;
+}
+.nav-item:hover {
+  background-color: rgba(127, 90, 240, 0.4);
+  color: #fffffe;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.hamburger-button {
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.closed-button {
+  position: absolute;
+  cursor: pointer;
+  top: 0.125em;
+  right: 0.5em;
+}
+
+.hamburger-hide {
+  display: none;
+}
+
+@media only screen and (min-width: 350px) {
+  .hamburger-button {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-lists-container {
+    display: block;
+    max-width: 700px;
+  }
+
+  .closed-button {
+    display: none;
+  }
+
+  .nav-lists {
+    flex-direction: row;
+    width: 100dvw;
+    background-color: #16161a;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    color: #7f5af0;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    transition: all 0.25s ease-in;
+  }
+
+  .nav-item:first-child {
+    display: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(127, 90, 240, 0.4);
+    color: #fffffe;
+  }
+}
+
+
+.nav-container {
+  display: flex;
+  background-color: #f8f5f2;
+  height: 100dvh;
+  justify-content: center;
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  width: 100dvw;
+  list-style: none;
+  color: #232323;
+  text-align: center;
+  transition: all 0.3s ease-in;
+ 
+}
+
+.nav-item:hover {
+  background-color: rgba(7, 128, 128, 0.35);
+} 
+*/
