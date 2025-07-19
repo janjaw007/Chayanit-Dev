@@ -167,6 +167,17 @@ Hero Section
   border-radius: 1rem;
 }
 
+/* 
+  ================
+  STACKS
+  ================
+  */
+
+.stacks-container {
+  border: 1px solid red;
+  margin-top: 4rem;
+}
+
 @media only screen and (min-width: 481px) {
   /* 
   ================
@@ -249,7 +260,7 @@ Hero Section
   ================
   */
   .nav-lists {
-    max-width: 1024px;
+    max-width: 769px;
     margin: 0 auto;
   }
 
