@@ -2,6 +2,7 @@
   --bg-web-bg-color: #010101;
   --bg-web-main-color: #fffffe;
   --bg-web-highlight: #7f5af0;
+  --bg-web-tertiary: #2cb67d;
   --bg-element-bg-color: #16161a;
   --bg-element-button-color: #7f5af0;
   --bg-element-text: #fffffe;
@@ -38,7 +39,7 @@ NAVBAR
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   text-align: right;
-  box-shadow: 0px 1px 7px 1px var(--bg-element-paragraph);
+  box-shadow: 0px 1px 7px 1px var(--bg-web-highlight);
 }
 
 .nav-lists {
@@ -60,7 +61,7 @@ NAVBAR
 .nav-item {
   list-style-type: none;
   text-transform: uppercase;
-  padding: 2rem 375px;
+  padding: 2rem 480px;
   width: 100%;
   transition: all 0.3s ease-in;
   text-align: center;
@@ -125,7 +126,7 @@ Hero Section
   text-transform: capitalize;
   letter-spacing: 0.15rem;
   padding-bottom: 0.25rem;
-  border-bottom: 3px solid var(--bg-web-highlight);
+  border-bottom: 3px solid var(--bg-web-tertiary);
 }
 
 .hero-describe {
@@ -133,7 +134,7 @@ Hero Section
   flex-direction: column;
   gap: 0.75rem;
   text-align: center;
-  max-width: 325px;
+  max-width: 375px;
   margin-bottom: 1rem;
   /* border: 1px solid red; */
 }
@@ -160,14 +161,13 @@ Hero Section
   height: 100%;
   top: 0;
   left: 0;
-  outline: 5px solid var(--bg-web-highlight);
-  transform: translate(1rem, 0.75rem);
+  outline: 2px solid var(--bg-web-highlight);
+  transform: translate(0.5rem, 0.25rem);
   z-index: -2;
   border-radius: 1rem;
-  overflow: hidden;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 481px) {
   /* 
   ================
   NAVBAR
@@ -239,7 +239,7 @@ Hero Section
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   body {
     margin: 0 auto;
   }
@@ -249,7 +249,17 @@ Hero Section
   ================
   */
   .nav-lists {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
+  }
+
+  /* 
+================
+Hero Section
+================
+*/
+
+  .hero-container {
+    margin-top: 4rem;
   }
 }
