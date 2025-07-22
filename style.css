@@ -211,12 +211,66 @@ Hero Section
 }
 
 .stacks-item:hover {
-  background-color: #7f5af0;
+  background-color: rgba(127, 90, 240, 0.5);
   transform: translateY(-1rem);
   cursor: pointer;
 }
 
 .stacks-item > span:last-child {
+  font-size: 4rem;
+}
+
+/* 
+  ================
+  Hobby
+  ================
+  */
+
+.hobby-container {
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+}
+
+.hobby-section {
+  display: grid;
+  place-items: center;
+}
+
+.hobby-title {
+  border-bottom: 3px solid var(--bg-web-tertiary);
+  margin-bottom: 1rem;
+}
+
+.hobby-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+  gap: 2rem 1rem;
+}
+
+.hobby-item {
+  border: 3px solid rgba(255, 255, 254, 0.3);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.hobby-item:hover {
+  background-color: rgba(44, 182, 125, 0.5);
+  transform: translateY(-1rem);
+  cursor: pointer;
+  color: var(--bg-web-highlight);
+}
+
+.hobby-item > span:last-child {
   font-size: 4rem;
 }
 
@@ -290,14 +344,6 @@ Hero Section
     text-align: left;
     max-width: 400px;
   }
-
-  .stacks-lists {
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem 0;
-    gap: 2rem 1rem;
-  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -325,6 +371,11 @@ Hero Section
   }
 
   .stacks-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .hobby-container {
     max-width: 1024px;
     margin: 0 auto;
   }
