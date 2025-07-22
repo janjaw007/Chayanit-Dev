@@ -312,12 +312,15 @@ Hero Section
   height: 300px;
   background-color: var(--bg-web-main-color);
   border-radius: 1rem;
+  overflow: hidden;
+  color: var(--bg-element-bg-color);
   z-index: -1; /* now card content is properly layered above the outline */
 }
 
 .project-sub-card-wrapper::after {
   transition: all 0.3s ease-out;
   content: "";
+  border-radius: 1rem;
 }
 
 .project-sub-card-wrapper:hover::after {
@@ -329,7 +332,6 @@ Hero Section
   height: 100%;
   outline: 3px solid var(--bg-web-tertiary);
   transform: translate(0.5rem, 0.5rem);
-  border-radius: 1rem;
   z-index: -2;
 }
 @media only screen and (min-width: 481px) {
