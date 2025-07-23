@@ -310,11 +310,42 @@ Hero Section
   position: relative;
   width: 300px;
   height: 300px;
-  background-color: var(--bg-web-main-color);
   border-radius: 1rem;
   overflow: hidden;
   color: var(--bg-element-bg-color);
-  z-index: -1; /* now card content is properly layered above the outline */
+}
+
+/* background container */
+.card-bg {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg-web-main-color);
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.card-title {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 1;
+}
+.card-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  border-radius: 1rem;
+}
+.card-link {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.6rem;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .project-sub-card-wrapper::after {
@@ -332,7 +363,7 @@ Hero Section
   height: 100%;
   outline: 3px solid var(--bg-web-tertiary);
   transform: translate(0.5rem, 0.5rem);
-  z-index: -2;
+  z-index: -3;
 }
 @media only screen and (min-width: 481px) {
   /* 
