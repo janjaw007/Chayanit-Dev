@@ -408,6 +408,16 @@ Hero Section
     text-align: left;
     max-width: 400px;
   }
+
+  .project-section-sub {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .project-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 769px) {
