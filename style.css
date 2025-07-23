@@ -301,70 +301,43 @@ Hero Section
   gap: 1rem;
 }
 
-.project-sub-card-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
 .project-sub-card {
-  position: relative;
   width: 300px;
   height: 300px;
-  border-radius: 1rem;
-  overflow: hidden;
-  color: var(--bg-element-bg-color);
-}
-
-/* background container */
-.card-bg {
-  position: absolute;
-  inset: 0;
   background-color: var(--bg-web-main-color);
+  color: var(--bg-element-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 1rem;
-  z-index: -1;
 }
 
-.card-title {
-  position: absolute;
-  top: 0.6rem;
-  left: 0.6rem;
-  z-index: 1;
-}
-.card-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  z-index: -1;
-  border-radius: 1rem;
-}
+.card-title,
 .card-link {
-  position: absolute;
-  bottom: 0.6rem;
-  left: 0.6rem;
-  cursor: pointer;
-  z-index: 2;
+  align-self: flex-start;
+  margin-left: 1rem;
 }
 
-.project-sub-card-wrapper::after {
-  transition: all 0.3s ease-out;
-  content: "";
-  border-radius: 1rem;
-}
-
-.project-sub-card-wrapper:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.card-img {
   width: 100%;
-  height: 100%;
-  outline: 3px solid var(--bg-web-tertiary);
-  transform: translate(0.5rem, 0.5rem);
-  z-index: -3;
+  height: 70%;
+  object-fit: cover;
 }
+
+.card-link {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-web-tertiary);
+  color: var(--bg-element-text);
+  transition: all 0.3s ease-in-out;
+}
+.card-link:hover {
+  background-color: var(--bg-web-highlight);
+  color: var(--bg-web-main-color);
+}
+
 @media only screen and (min-width: 481px) {
   /* 
   ================
