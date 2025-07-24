@@ -353,10 +353,18 @@ Hero Section
   color: var(--bg-web-main-color);
 }
 
+/* 
+================
+Contact Section
+================
+*/
+
 .contact-container {
+  display: flex;
   margin-top: 1rem;
   padding: 2rem 1rem;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
 
@@ -364,6 +372,39 @@ Hero Section
   border-bottom: 3px solid var(--bg-web-tertiary);
   margin-bottom: 1rem;
   display: inline-block;
+}
+
+.contact-address {
+  margin-bottom: 0.5rem;
+}
+
+.contact-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact-btn > a {
+  border: 3px solid var(--bg-element-button-color);
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: var(--bg-element-text);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.contact-btn > a:hover {
+  background-color: var(--bg-element-button-color);
+  color: var(--bg-element-bg-color);
+}
+
+.contact-btn > a > span {
+  color: var(--bg-element-text);
 }
 
 @media only screen and (min-width: 481px) {
@@ -449,6 +490,14 @@ Hero Section
   .contact-container {
     max-width: 1024px;
     margin: 0 auto;
+  }
+  .contact-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    justify-content: center;
   }
 }
 
