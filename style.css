@@ -325,6 +325,20 @@ Hero Section
   object-fit: cover;
 }
 
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-stack {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.25rem;
+  padding-right: 0.5rem;
+}
+
 .card-link {
   text-decoration: none;
   padding: 0.25rem 0.5rem;
