@@ -221,6 +221,19 @@ Hero Section
   font-size: 4rem;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-web-tertiary);
+  gap: 0.25rem;
+  padding: 0.5rem 0;
+}
+
+.footer-container > div > span {
+  font-size: 0.75rem;
+}
+
 /* 
   ================
   Hobby

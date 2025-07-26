@@ -1,6 +1,12 @@
 const navLists = document.querySelector(".nav-lists");
 const closedButton = document.querySelector(".closed-button");
 const hamburgerButton = document.querySelector(".hamburger-button");
+const footerYear = document.getElementById("footer-year");
+
+const date = new Date();
+const year = date.getFullYear();
+
+footerYear.textContent = year;
 
 hamburgerButton.addEventListener("click", function (e) {
   hamburgerButton.classList.add("hamburger-hide");
